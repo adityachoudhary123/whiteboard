@@ -7,6 +7,7 @@
     "scripts": {
         "build": "yarn build:app",
         "build:app": "cross-env NODE_ENV=production webpack build",
+        "build-prod": "parcel build ./index.html --dist-dir build",
         "dev": "webpack serve",
         "clean": "del -rf ./www",
         "test": "jest"
