@@ -17,7 +17,7 @@ export const Layout = props => {
     const isScreenshot = board.activeAction === ACTIONS.SCREENSHOT;
     const handleImageLoad = () => {
         const options = {
-            description: "Folio Board",
+            description: "EKIN Board",
             extensions: [
                 FILE_EXTENSIONS.PNG,
                 FILE_EXTENSIONS.JPG,

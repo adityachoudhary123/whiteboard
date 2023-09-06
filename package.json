@@ -1,17 +1,14 @@
 {
-    "name": "folio",
+    "name": "ekin",
     "version": "0.9.3",
     "description": "A minimalistic digital whiteboard for sketching and prototyping",
     "private": true,
-    "homepage": "https://www.josemi.xyz/folio",
-    "repository": "https://github.com/jmjuanes/folio",
-    "author": "Josemi Juanes <hello@josemi.xyz>",
-    "bugs": "https://github.com/jmjuanes/folio/issues",
+    
     "scripts": {
-        "build": "yarn clean && yarn build:app",
+        "build": "yarn build:app",
         "build:app": "cross-env NODE_ENV=production webpack build",
-        "dev": "yarn clean && webpack serve",
-        "clean": "rm -rf ./www",
+        "dev": "webpack serve",
+        "clean": "del -rf ./www",
         "test": "jest"
     },
     "dependencies": {
@@ -43,8 +40,8 @@
         "react": "^18.2.0",
         "react-test-renderer": "^18.2.0",
         "webpack": "^5.72.1",
-        "webpack-cli": "^4.9.2",
-        "webpack-dev-server": "^4.11.1"
+        "webpack-cli": "^4.10.0",
+        "webpack-dev-server": "^4.15.1"
     },
     "license": "MIT",
     "jest": {

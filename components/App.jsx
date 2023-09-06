@@ -53,7 +53,7 @@ const BoardWrapper = props => {
             key={props.id}
             initialData={() => client.getBoard(props.id)}
             links={[
-                {url: process.env.URL_REPOSITORY, text: "About Folio"},
+                {url: process.env.URL_REPOSITORY, text: "About EKIN"},
                 {url: process.env.URL_ISSUES, text: "Report a bug"},
             ]}
             showLoad={false}
@@ -95,10 +95,10 @@ export const App = () => {
         <div className="w-full maxw-6xl mx-auto px-6">
             <div className="mt-24 animation-fadein">
                 <div className="font-crimson font-black text-9xl leading-none tracking-tight">
-                    <span>Folio.</span>
+                    <span>EKIN</span>
                 </div>
                 <div className="mt-4 text-xl w-full maxw-xl">
-                    Welcome to <b>Folio</b>, our work-in-progress minimal digital whiteboard for sketching and prototyping.
+                    Welcome to <b>EKIN</b>, our work-in-progress minimal digital whiteboard for sketching and prototyping.
                 </div>
             </div>
             <div className="mt-16">
@@ -160,11 +160,11 @@ export const App = () => {
                 <div className="w-full h-px bg-gray-200 mb-16" />
                 <div className="flex flex-col items-center">
                     <div className="text-sm mb-2">
-                        <span><b>Folio</b> v{process.env.VERSION}</span>
+                        <span><b>EKIN</b> v{process.env.VERSION}</span>
                     </div>
-                    <div className="text-xs text-gray-600 mb-1">
+                    {/* <div className="text-xs text-gray-600 mb-1">
                         Designed by <a href="https://www.josemi.xyz" target="_blank" className="underline">Josemi</a> in Valencia, Spain.
-                    </div>
+                    </div> */}
                     <div className="text-xs text-gray-600">
                         <span>This site does not track you.</span>
                     </div>

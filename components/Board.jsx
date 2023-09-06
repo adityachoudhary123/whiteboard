@@ -67,7 +67,7 @@ const InnerBoard = React.forwardRef((props, ref) => {
                                         <DrawingIcon />
                                     </div>
                                     <div className="flex items-center select-none font-crimson text-3xl leading-none">
-                                        <span className="font-black leading-none text-gray-900">Folio.</span>
+                                        <span className="font-black leading-none text-gray-900">EKIN</span>
                                     </div>
                                 </div>
                             )}
@@ -113,7 +113,7 @@ const InnerBoard = React.forwardRef((props, ref) => {
                 )}
                 onChange={props.onChange}
             />
-            {exportVisible && (
+            {/* {exportVisible && (
                 <ExportDialog
                     cropRegion={screenshotRegion}
                     onClose={() => {
@@ -121,7 +121,7 @@ const InnerBoard = React.forwardRef((props, ref) => {
                         setScreenshotRegion(null);
                     }}
                 />
-            )}
+            )} */}
         </div>
     );
 });
